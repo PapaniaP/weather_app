@@ -6,10 +6,9 @@ This is a simple weather app project created to learn JavaScript and API impleme
 
 ![Weather App Screenshot 2](/images/weather-app-2.jpeg) -->
 
-<div style="display: flex; justify-content: space-between; align-items: flex-start;">
-    <img src="images/weather-app-1.png" alt="Weather App Screenshot 1" width="300" style="margin-right: 20px;">
-    <img src="images/weather-app-2.jpeg" alt="Weather App Screenshot 2" width="300">
-</div>
+| ![Weather App Screenshot 1](images/weather-app-1.png) | ![Weather App Screenshot 2](images/weather-app-2.jpeg) |
+| :---------------------------------------------------: | :----------------------------------------------------: |
+|                     On page load                      |               After searching for a city               |
 
 ## Features
 
