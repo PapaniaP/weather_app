@@ -6,9 +6,10 @@ This is a simple weather app project created to learn JavaScript and API impleme
 
 ![Weather App Screenshot 2](/images/weather-app-2.jpeg) -->
 
-<img src="images/weather-app-1.png" alt="Weather App Screenshot 1" width="300">
-
-<img src="images/weather-app-2.jpeg" alt="Weather App Screenshot 2" width="300">
+<div style="display: flex; justify-content: space-between;">
+    <img src="images/weather-app-1.png" alt="Weather App Screenshot 1" width="300">
+    <img src="images/weather-app-2.jpeg" alt="Weather App Screenshot 2" width="300">
+</div>
 
 ## Features
 
