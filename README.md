@@ -2,9 +2,9 @@
 
 This is a simple weather app project created to learn JavaScript and API implementation. With this app, users can check the current weather conditions for a location by entering the city name.
 
-![Weather App Screenshot 1](weather-app-1.png)
+![Weather App Screenshot 1](images/weather-app-1.png)
 
-![Weather App Screenshot 2](weather-app-2.jpeg)
+![Weather App Screenshot 2](/images/weather-app-2.jpeg)
 
 ## Features
 
