@@ -2,6 +2,11 @@
 
 This is a simple weather app project created to learn JavaScript and API implementation. With this app, users can check the current weather conditions for a location by entering the city name.
 
+## Why I Created This
+
+- This was a project I created in order to practice my frontend abilities.
+- I decided to do this specific component/app to learn new things, in this case, API integration firstly
+
 <!-- ![Weather App Screenshot 1](images/weather-app-1.png)
 
 ![Weather App Screenshot 2](/images/weather-app-2.jpeg) -->
@@ -51,6 +56,11 @@ During the development of this weather app, I gained valuable experience and kno
 - **Git and GitHub**: For the first time, I utilized Git and GitHub to track changes to my project. Whether or not i did it well is up to you. :D
 
 These are just some of the key skills and knowledge I acquired while working on this weather app project. I look forward to further enhancing my coding skills and tackling more complex projects in the future.
+
+### 5. Difficulties
+
+- Learning how to integrate an API and how to send and fetch data - Async function.
+- Using git for the first time made this project take a lot longer than necessary.
 
 ## Installation
 
