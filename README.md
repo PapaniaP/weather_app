@@ -11,7 +11,7 @@ This is a simple weather app project created to learn JavaScript and API impleme
 
 ![Weather App Screenshot 2](/images/weather-app-2.jpeg) -->
 
-| ![Weather App Screenshot 1](images/weather-app-1.png) | ![Weather App Screenshot 2](images/weather-app-2.jpeg) |
+| ![Weather App Screenshot 1](images/weather-app-3.png) | ![Weather App Screenshot 2](images/weather-app-4.jpeg) |
 | :---------------------------------------------------: | :----------------------------------------------------: |
 |                     On page load                      |               After searching for a city               |
 
