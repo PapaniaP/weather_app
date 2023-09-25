@@ -18,7 +18,7 @@ This is a simple weather app project created to learn JavaScript and API impleme
 ## Features
 
 - **Weather Information**: Retrieve current weather data for a specified location.
-- **User-Friendly Interface**: A clean and intuitive interface for easy navigation.
+- **User-Friendly Interface**: A clean and intuitive interface for easy navigation. Inspired by Apple Vision Pro UI.
 
 ## Technologies Used
 
