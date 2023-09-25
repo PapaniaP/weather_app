@@ -5,7 +5,7 @@ This is a simple weather app project created to learn JavaScript and API impleme
 ## Why I Created This
 
 - This was a project I created in order to practice my frontend abilities.
-- I decided to do this specific component/app to learn new things, in this case, API integration firstly
+- I decided to do this specific component/app to learn new things, in this case, API integration was the priority
 
 <!-- ![Weather App Screenshot 1](images/weather-app-1.png)
 
@@ -18,7 +18,7 @@ This is a simple weather app project created to learn JavaScript and API impleme
 ## Features
 
 - **Weather Information**: Retrieve current weather data for a specified location.
-- **User-Friendly Interface**: A clean and intuitive interface for easy navigation. Inspired by Apple Vision Pro UI.
+- **User-Friendly Interface**: A clean and intuitive interface for easy navigation. **Inspired by Apple Vision Pro UI**.
 
 ## Technologies Used
 
