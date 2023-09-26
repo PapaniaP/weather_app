@@ -2,6 +2,12 @@
 
 This is a simple weather app project created to learn JavaScript and API implementation. With this app, users can check the current weather conditions for a location by entering the city name.
 
+## Project Overview
+
+- **Type:** Web Development
+- **Date:** September 2023
+- **Technology Stack:** HTML, CSS, JavaScript
+
 ## Why I Created This
 
 - This was a project I created in order to practice my frontend abilities.
@@ -69,3 +75,7 @@ These are just some of the key skills and knowledge I acquired while working on 
    ```bash
    git clone https://github.com/PapaniaP/weather
    ```
+
+**Designed and developed by Paolo Papania**
+
+[Portfolio](https://www.papaniap.dk) | [LinkedIn](https://www.linkedin.com/in/papaniap/)
