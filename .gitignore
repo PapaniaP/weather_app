@@ -3,3 +3,5 @@ build/
 
 # Ignore log files
 *.log
+
+config.js
