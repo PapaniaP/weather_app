@@ -2,6 +2,10 @@
 
 This is a weather app that allows users to check current weather conditions for any location. The app features a clean, responsive design with real-time weather updates.
 
+## Live Demo
+
+**[Try the Weather App here](https://papaniap.github.io/weather_app/)**
+
 ## Project Overview
 
 - **Type:** Web Development
