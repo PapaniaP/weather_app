@@ -1,59 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>What's The Weather Like?</title>
-		<link rel="stylesheet" href="styles.css" />
-	</head>
-	<body>
-		<div class="bg-image"></div>
-		<div class="card">
-			<div class="search">
-				<input type="text" placeholder="Enter City Name" spellcheck="false" />
-				<button>
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						viewBox="0 0 24 24"
-						fill="currentColor"
-						aria-hidden="true"
-					>
-						<path
-							fill-rule="evenodd"
-							d="M10.5 3.75a6.75 6.75 0 100 13.5 6.75 6.75 0 000-13.5zM2.25 10.5a8.25 8.25 0 1114.59 5.28l4.69 4.69a.75.75 0 11-1.06 1.06l-4.69-4.69A8.25 8.25 0 012.25 10.5z"
-							clip-rule="evenodd"
-						/>
-					</svg>
-				</button>
-			</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Weather App</title>
+    <meta
+      name="description"
+      content="Check current weather conditions for any location around the world"
+    />
+    <link
+      rel="icon"
+      href="./images/weather-icon.svg"
+      type="image/svg+xml"
+    />
+    <link
+      rel="alternate icon"
+      href="./images/favicon.png"
+      type="image/png"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="./images/favicon.png"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="styles.css"
+    />
+  </head>
+  <body>
+    <div
+      class="bg-image"
+      aria-hidden="true"
+    ></div>
 
-			<div class="error">
-				<p>Invalid City Name</p>
-			</div>
+    <main id="app">
+      <div class="glass-card">
+        <header>
+          <h1 class="app-title">Weather App</h1>
+        </header>
 
-			<div class="weather">
-				<img src="./images/rain.png" class="weather-icon" />
-				<h1 class="temp">17 °C</h1>
-				<h2 class="city">Johannesburg</h2>
-				<div class="details">
-					<div class="col">
-						<img src="./images/humidity.png" />
-						<div>
-							<p class="humidity">50%</p>
-							<p>Humidity</p>
-						</div>
-					</div>
-					<div class="col">
-						<img src="./images/wind.png" />
-						<div>
-							<p class="wind">12 km/h</p>
-							<p>Wind Speed</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<script src="config.js"></script>
-		<script src="script.js"></script>
-	</body>
+        <form
+          class="search-form"
+          role="search"
+          aria-label="Search for a city"
+          onsubmit="return false;"
+        >
+          <div class="search-container">
+            <input
+              type="text"
+              id="city-input"
+              placeholder="Enter city name"
+              aria-label="Enter city name"
+              autocomplete="off"
+              spellcheck="false"
+            />
+            <button
+              type="button"
+              id="search-btn"
+              aria-label="Search for weather"
+              class="btn-icon"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10.5 3.75a6.75 6.75 0 100 13.5 6.75 6.75 0 000-13.5zM2.25 10.5a8.25 8.25 0 1114.59 5.28l4.69 4.69a.75.75 0 11-1.06 1.06l-4.69-4.69A8.25 8.25 0 012.25 10.5z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <div
+            class="unit-toggle"
+            role="radiogroup"
+            aria-label="Temperature unit"
+          >
+            <button
+              type="button"
+              class="unit-btn active"
+              data-unit="metric"
+              aria-pressed="true"
+              aria-label="Display temperature in Celsius"
+            >
+              °C
+            </button>
+            <button
+              type="button"
+              class="unit-btn"
+              data-unit="imperial"
+              aria-pressed="false"
+              aria-label="Display temperature in Fahrenheit"
+            >
+              °F
+            </button>
+          </div>
+        </form>
+
+        <div
+          class="status-message error"
+          role="alert"
+          aria-live="assertive"
+        >
+          <p>
+            City not found. Please check the spelling and try again.
+          </p>
+        </div>
+
+        <div
+          class="status-message loading"
+          aria-live="polite"
+        >
+          <p>Loading weather data...</p>
+        </div>
+
+        <section
+          class="weather-display"
+          aria-live="polite"
+        >
+          <img
+            src="./images/rain.png"
+            class="weather-icon"
+            alt="Weather condition"
+          />
+          <h2 class="temp">17 °C</h2>
+          <h3 class="city">Johannesburg</h3>
+          <p class="description">Scattered Clouds</p>
+
+          <div class="weather-details">
+            <div class="detail-item">
+              <img
+                src="./images/humidity.png"
+                alt="Humidity icon"
+              />
+              <div class="detail-text">
+                <span class="detail-value humidity">50%</span>
+                <span class="detail-label">Humidity</span>
+              </div>
+            </div>
+            <div class="detail-item">
+              <img
+                src="./images/wind.png"
+                alt="Wind icon"
+              />
+              <div class="detail-text">
+                <span class="detail-value wind">12 km/h</span>
+                <span class="detail-label">Wind Speed</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        Data provided by
+        <a
+          href="https://openweathermap.org/"
+          target="_blank"
+          rel="noopener"
+          >OpenWeather</a
+        >
+      </p>
+    </footer>
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>

@@ -1,17 +1,22 @@
 # Weather App
 
-This is a simple weather app project created to learn JavaScript and API implementation. With this app, users can check the current weather conditions for a location by entering the city name.
+This is a weather app that allows users to check current weather conditions for any location. The app features a clean, responsive design with real-time weather updates.
 
 ## Project Overview
 
 - **Type:** Web Development
-- **Date:** September 2023
+- **Date:** Updated March 2024
 - **Technology Stack:** HTML, CSS, JavaScript
 
-## Why I Created This
+## Features
 
-- This was a project I created in order to practice my frontend abilities.
-- I decided to do this specific component/app to learn new things, in this case, API integration was the priority
+- **Current Weather**: Get real-time weather data for any city worldwide
+- **Geolocation**: Automatically detects user location on page load
+- **Temperature Units**: Toggle between Celsius and Fahrenheit
+- **Responsive Design**: Works on all device sizes from mobile to desktop
+- **Accessibility**: ARIA attributes and semantic HTML for better accessibility
+- **Performance Optimized**: Data caching to reduce API calls
+- **Error Handling**: Graceful error handling with user-friendly messages
 
 <!-- ![Weather App Screenshot 1](images/weather-app-1.png)
 
@@ -21,60 +26,49 @@ This is a simple weather app project created to learn JavaScript and API impleme
 | :---------------------------------------------------: | :---------------------------------------------------: |
 |                     On page load                      |              After searching for a city               |
 
-## Features
-
-- **Weather Information**: Retrieve current weather data for a specified location.
-- **User-Friendly Interface**: A clean and intuitive interface for easy navigation. **Inspired by Apple Vision Pro UI**.
-
 ## Technologies Used
 
-- HTML
-- CSS
-- JavaScript
-- OpenWeatherMap API
+- **HTML5**: Semantic structure
+- **CSS3**: Modern styling with flexbox and media queries
+- **JavaScript**: ES6+ features and async/await for API calls
+- **APIs**: OpenWeatherMap API for weather data
+- **Geolocation API**: Browser geolocation for automatic location detection
 
-## What I Learned
+## How It Works
 
-During the development of this weather app, I gained valuable experience and knowledge in the following areas:
+1. **Geolocation**: On first load, the app tries to get the user's location
+2. **Weather Data**: Fetches current weather from OpenWeatherMap API
+3. **Caching**: Stores recent searches to reduce API calls
+4. **Unit Conversion**: Allows switching between metric and imperial units
 
-### 1. JavaScript
+## Code Structure
 
-- **Asynchronous Programming**: I learned how to work with asynchronous functions and the `async/await` syntax to fetch data from an external API (OpenWeatherMap) and update the user interface based on the retrieved data.
+- **HTML**: Semantic markup with accessibility attributes
+- **CSS**: Responsive design with modern techniques
+- **JavaScript**: Modular functions with proper error handling
+- **Config**: Centralized configuration for easy maintenance
 
-- **DOM Manipulation**: I improved my skills in manipulating the Document Object Model (DOM) to dynamically update HTML elements and provide real-time feedback to the user.
+## Future Improvements
 
-- **Conditional Statements**: I used conditional statements to handle different weather conditions and display corresponding weather icons.
-
-- **Event Handling**: I practiced event handling by adding a click event listener to the search button, which triggers the weather data retrieval process.
-
-### 2. API Integration
-
-- **OpenWeatherMap API**: I successfully integrated the OpenWeatherMap API into my project to retrieve weather data based on user input (city name) and display it in a user-friendly format.
-
-- **API Key Management**: I learned how to securely manage API keys by storing them in a separate JavaScript file and accessing them as environment variables.
-
-### 3. Error Handling
-
-- **HTTP Status Codes**: I implemented error handling by checking for HTTP status codes returned by the API. In case of a 404 status code, I display an error message to the user.
-
-### 4. Version Control
-
-- **Git and GitHub**: For the first time, I utilized Git and GitHub to track changes to my project. Whether or not i did it well is up to you. :D
-
-These are just some of the key skills and knowledge I acquired while working on this weather app project. I look forward to further enhancing my coding skills and tackling more complex projects in the future.
-
-### 5. Difficulties
-
-- Learning how to integrate an API and how to send and fetch data - Async function.
-- Using git for the first time made this project take a lot longer than necessary.
+- Add 5-day weather forecast
+- Implement dark/light theme toggle
+- Add more detailed weather information (pressure, sunrise/sunset)
+- Create a backend proxy to secure API keys
 
 ## Installation
 
-1. Clone the repository:
+1. Clone the repository
+2. Open index.html in your browser
+3. Allow location permissions for full functionality
 
-   ```bash
-   git clone https://github.com/PapaniaP/weather
-   ```
+## API Key
+
+The app uses OpenWeatherMap API. For security reasons, in a production environment, the API key should be handled server-side.
+
+## Credits
+
+- Weather data provided by [OpenWeatherMap](https://openweathermap.org/)
+- Icons and design inspiration from various sources
 
 **Designed and developed by Paolo Papania**
 
